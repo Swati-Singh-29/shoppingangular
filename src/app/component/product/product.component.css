@@ -1,0 +1,30 @@
+.card-top{
+    font-size: 16px;
+    color: #1c1c1c;
+    line-height: 39px;
+    display: block;
+    
+}
+.item{
+
+    margin: 0px 5px;
+    text-align: center;
+}
+
+.item a:hover{
+   color:blue;
+}
+
+.card{
+    padding: 27px;
+    margin: 2px;
+    width: 94%;
+}
+
+.card img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    
+}
+

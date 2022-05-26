@@ -1,0 +1,51 @@
+<div style="border:1px solid burlywood; width:20%; height: 500px; float: left;" class="shadow p-3 mb-5 bg-body rounded" >
+    <div class="card-top">
+
+        <div class="item">
+            <a>
+                
+                 <h6>Category</h6>
+            </a>
+        </div>
+
+        <div class="item">
+            <a>
+                
+                <h6>Electronics</h6>
+            </a>
+            
+        </div>
+
+        <div class="item">
+            <a>
+                
+                <h6>Fashion</h6>
+            </a>
+        </div>
+
+        <div class="item">
+            <a>
+                
+                <h6>Jewellery</h6>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div style=" width:79%; height: 500px; float: left;" class="container" >
+    <div class="row">
+        <ng-container *ngFor="let item of productList">
+            <div class="card col-md-3">
+                <img src="{{item.image}}" alt="">
+                <h5 style="white-space: nowrap; overflow: hidden; text-overflow:ellipsis; max-width:100ch ;color: blue;">{{item.title}}</h5>
+                <p style="white-space: nowrap; overflow: hidden; max-width:100ch">{{item.description}}</p>
+                <p><strong>Price:</strong>{{item.price}}Rs</p>
+                <button class="btn btn-primary" (click)=addtocart(item)> Add to cart</button>
+          
+      
+              </div>
+        </ng-container>
+        
+    </div>
+</div>
+
